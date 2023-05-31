@@ -1,4 +1,4 @@
-#Ordered Linked List (lista ligada ordenada)
+# Ordered Linked List (lista ligada ordenada)
 
 Este é um trabalho preparatório, sem fins avaliativos, para a disciplina Programação 1 (CI1001) da UFPR onde deve-se implementar uma lista ligada ordenada. Tal trabalho será utilizado em um trabalho avaliativo maior que terá peso 6 na disciplina.
 
