@@ -7,7 +7,7 @@
 
 /*
  * A  Lista ordenada eh uma lista que armazena dados ordenados pelo membro
- * chave do tipo ponteiro para elemento_t. 
+ * chave do tipo ponteiro para elemento_t.
  * A diferenca para a implementacao da Pilha e da Fila eh que ao invez
  * do nodo conter um int, ele contem um apontador para uma struct
  * que contem um int.
