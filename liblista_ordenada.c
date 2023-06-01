@@ -120,3 +120,31 @@ int lista_remove_ordenado(lista_t *l, elemento_t *elemento)
 	free(temp);
 	return 1;	
 }
+
+int lista_search_ordenado(lista_t *l, elemento_t *elemento)
+{
+	nodo_t *aux;
+	
+	if(lista_vazia(l))
+	{
+		return 0;
+	}
+	
+	if(elemento->chave == l->ini->elemento->chave)
+	{
+		return 1;
+	}
+	
+	aux = l->ini;
+	while(aux->prox != NULL && 
+		elemento->chave != aux->prox->elemento->chave)
+	{
+		aux = aux->prox;
+	}
+	
+	if(aux->prox == NULL || 
+		elemento->chave != aux->prox->elemento->chave)
+			return 0;
+
+	return 1;	
+}

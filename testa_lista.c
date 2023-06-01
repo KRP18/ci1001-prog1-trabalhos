@@ -157,5 +157,21 @@ int main (void)
     elemento_destroi(&e4);
     printf ("\n\n");
 
+    printf("Teste 10: encontrar elemento na lista:\n");
+    printf("Esperado: nao pode ter dado segfault\n");
+    lista2 = lista_cria();
+    e1 = elemento_cria(10);
+    e2 = elemento_cria(25);
+    e3 = elemento_cria(5);
+    e4 = elemento_cria(7);
+    lista_insere_ordenado(lista2, e1);
+    lista_insere_ordenado(lista2, e2);
+    lista_insere_ordenado(lista2, e3);
+    teste_search(lista2, e3);
+    teste_search(lista2, e4);
+    lista_destroi(&lista2);
+    elemento_destroi(&e4);
+    printf ("\n\n");
+
     return 0;
 }

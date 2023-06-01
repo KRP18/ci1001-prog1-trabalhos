@@ -66,3 +66,9 @@ int lista_insere_ordenado (lista_t *l, elemento_t *elemento);
  * Retorna 1 em caso de sucesso e 0 caso elemento nao esteja na Lista.
 */
 int lista_remove_ordenado (lista_t *l, elemento_t *elemento);
+
+/* 
+ * Busca o elemento na Lista sem inserir ou remover.
+ * Retorna 1 caso o elemento exista e 0 se não existir na Lista.
+*/
+int lista_search_ordenado (lista_t *l, elemento_t *elemento);
