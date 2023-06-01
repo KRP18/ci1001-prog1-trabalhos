@@ -75,6 +75,20 @@ void teste_remove(lista_t *l, elemento_t *e)
     return;
 }
 
+void teste_search(lista_t *l, elemento_t *e)
+{
+	printf ("\tBuscando a chave %d\n", e->chave);
+
+    if (!lista_search_ordenado(l, e))
+    {
+        printf ("Elemento inexistente na lista.\n");
+		return;
+	}
+
+    printf ("Elemento encontrado com sucesso.\n");
+    return;
+}
+
 int main (void)
 {
     lista_t *lista1, *lista2;
