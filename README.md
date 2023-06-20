@@ -9,4 +9,3 @@ Deve-se neste programa:
 - Aprender a inserir e remover ordenadamente;
 - Lidar com a diferençaa entre o nodo conter um int e agora ele conter
 um apontador para int.
-
